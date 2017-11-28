@@ -9,4 +9,5 @@ time.sleep(3)
 seconr_url='http://v.baidu.com/'
 print u'进入第二个视频网页 %s' %(seconr_url)
 time.sleep(5)
+
 browser.quit()
