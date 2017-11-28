@@ -1,12 +1,13 @@
 #coding=utf-8
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.action_chains import ActionChains
 import time
 browser = webdriver.Firefox()
-first_url='http://mail.163.com/'
+first_url='http://baidu.com'
+print u'进入第一个网页 %s' % (first_url)
 browser.get(first_url)
+time.sleep(3)
+seconr_url='http://v.baidu.com/'
+print u'进入第二个视频网页 %s' %(seconr_url)
 time.sleep(5)
-a = browser.find_element_by_xpath("//input[@name='email']")
-a.send_keys('15210242844')
-aaaaa312321
+
+browser.quit()
